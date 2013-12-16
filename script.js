@@ -87,17 +87,48 @@ $(document).ready(function(){
 	
 	
 	
+	//Bring in the posts, and hide all but the current one.
+	
 	$(".linklisting").appendTo(".wall");
 	$(".linklisting").css("backgroundImage", i("frame1"));
 	$(".linklisting").children().addClass("hide");
+	$(".linklisting").children().removeClass("show");
 	$(".linklisting").children(":nth-child(" + postNumber + ")").removeClass("hide");
+	$(".linklisting").children(":nth-child(" + postNumber + ")").addClass("show");
 	
 
+	
+	
+	
+	//Making Some Buttons
 	
 	$(".wall").append('<div class="firstNav"></div><div class="previousNav"></div><div class="nextNav"></div>');
 	$(".firstNav").css("backgroundImage", i("first"));
 	$(".previousNav").css("backgroundImage", i("previous"));
 	$(".nextNav").css("backgroundImage", i("next"));
+	
+	
+	
+	
+	
+	
+	//Trying to open the link's page within the main page.
+	
+	console.log($(".show")[0]);
+	console.log($(".show a.title").attr("href"));
+	var sendlink = ($(".show a.title").attr("href"));
+	
+	
+	
+	$(".wall").append('<div><iframe src="' + sendlink + '" id="serverurl" width="450" height="550"></iframe></div>');
+	
+	
+	
+	
+	
+	
+	
+	//Using the buttons
 	
 	$(".nextNav").click(function(){
 		
@@ -105,7 +136,12 @@ $(document).ready(function(){
 		postNumber = localStorage.getItem("post");
 		console.log(postNumber);
 		$(".linklisting").children().addClass("hide");
+		$(".linklisting").children().removeClass("show");
 		$(".linklisting").children(":nth-child(" + postNumber + ")").removeClass("hide");
+		$(".linklisting").children(":nth-child(" + postNumber + ")").addClass("show");
+		$("iframe").remove();
+		sendlink = ($(".show a.title").attr("href"));
+		$(".wall").append('<div><iframe src="' + sendlink + '" id="serverurl" width="450" height="550"></iframe></div>');
 		
 	});
 	
@@ -115,7 +151,12 @@ $(document).ready(function(){
 		postNumber = localStorage.getItem("post");
 		console.log(postNumber);
 		$(".linklisting").children().addClass("hide");
+		$(".linklisting").children().removeClass("show");
 		$(".linklisting").children(":nth-child(" + postNumber + ")").removeClass("hide");
+		$(".linklisting").children(":nth-child(" + postNumber + ")").addClass("show");
+		$("iframe").remove();
+		sendlink = ($(".show a.title").attr("href"));
+		$(".wall").append('<div><iframe src="' + sendlink + '" id="serverurl" width="450" height="550"></iframe></div>');
 		
 	});
 	
@@ -125,7 +166,12 @@ $(document).ready(function(){
 		postNumber = localStorage.getItem("post");
 		console.log(postNumber);
 		$(".linklisting").children().addClass("hide");
+		$(".linklisting").children().removeClass("show");
 		$(".linklisting").children(":nth-child(" + postNumber + ")").removeClass("hide");
+		$(".linklisting").children(":nth-child(" + postNumber + ")").addClass("show");
+		$("iframe").remove();
+		sendlink = ($(".show a.title").attr("href"));
+		$(".wall").append('<div><iframe src="' + sendlink + '" id="serverurl" width="450" height="550"></iframe></div>');
 		
 	});
 	
@@ -153,7 +199,7 @@ $(document).ready(function(){
 	
 	
 
-	$("wall").append('<div><iframe src="http://www.reddit.com/r/funny/" id="serverurl" width="300" height="300"></iframe></div>');
+	
 	
 	
 	//	$(".linklisting").children().each(function(index) {

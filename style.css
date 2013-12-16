@@ -37,8 +37,8 @@
 	height:200px;
 	width:500px;
 	position:absolute;
-	top:150px;
-	left:400px;
+	top:130px;
+	left:40px;
 	padding-left:20px;
 	padding-right:10px;
 	padding-top:120px;
@@ -50,23 +50,33 @@
 	width:75px;
 	height:75px;
 	position:absolute;
-	top:180px;
-	left:120px;
+	top:500px;
+	left:80px;
 }
 
 .previousNav {
 	width:75px;
 	height:75px;
 	position:absolute;
-	top:350px;
-	left:200px;
+	top:510px;
+	left:260px;
 }
 
 .nextNav{
 	width:75px;
 	height:75px;
 	position:absolute;
-	top: 200px;
-	left: 1000px;
+	top: 520px;
+	left: 450px;
 }
+
+iframe {
+	position:relative;
+	top:55px;
+	left:610px;
+	border: 8pt ridge #fbcc0e;
+}
+	
+	
+	
 
