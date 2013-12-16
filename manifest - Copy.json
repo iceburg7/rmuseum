@@ -1,0 +1,25 @@
+{
+  "name": "rMuseum",
+  "description": "Inject a custom stylesheet on a website",
+  "version": "0.0.1",  
+  "content_scripts": [
+    {
+      "matches": ["http://*.reddit.com/"],
+      "css": ["style.css"],
+	  "js": ["jquery.js", "script.js"]
+    }
+  ],
+  "manifest_version": 2,
+  "web_accessible_resources": [
+       "images/testlol.png",
+	   "images/background.png",
+	   "images/background2.png",
+	   "images/background700.png",
+	   "images/background7002.png",
+	   "images/background500.png",
+	   "images/first.png",
+	   "images/previous.png",
+	   "images/next.png",
+	   "images/frame1.png"
+     ]
+}
