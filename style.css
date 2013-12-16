@@ -11,7 +11,6 @@
 	width:1200px;
 	margin-left:auto;
 	margin-right:auto;
-	background-color:gainsboro;
 	position:relative;
 }
 
@@ -38,15 +37,20 @@
 	height:200px;
 	width:500px;
 	position:absolute;
-	top:200px;
+	top:150px;
 	left:400px;
+	padding-left:20px;
+	padding-right:10px;
+	padding-top:120px;
+	
+	
 }
 
 .firstNav {
 	width:75px;
 	height:75px;
 	position:absolute;
-	top:100px;
+	top:180px;
 	left:120px;
 }
 
@@ -62,7 +66,7 @@
 	width:75px;
 	height:75px;
 	position:absolute;
-	top: 150px;
+	top: 200px;
 	left: 1000px;
 }
 
