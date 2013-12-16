@@ -11,6 +11,10 @@
   ],
   "manifest_version": 2,
   "web_accessible_resources": [
-       "images/testlol.png"
+       "images/testlol.png",
+	   "images/background.png",
+	   "images/background2.png",
+	   "images/background700.png",
+	   "images/background500.png"
      ]
 }

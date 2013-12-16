@@ -6,10 +6,16 @@
 	display:block;
 }
 
+body {
+	position:relative;
+}
+
 .wrapper {
 	width:100%;
 	height:1000px;
-	background-color: gainsboro;
+	background-color: white;
+	
+
 }
 
 
@@ -17,4 +23,16 @@
 .test {
 	width:400px;
 	height:400px;
+}
+
+#header, .side, .content, .footer-parent, .login-popup, .lang.popup, .debuginfo {
+	display:none;
+}
+
+.linklisting {
+	height:200px;
+	width:40%;
+	position:absolute;
+	top:200px;
+	left:30%;
 }
