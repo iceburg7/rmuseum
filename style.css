@@ -6,14 +6,19 @@
 	display:block;
 }
 
-body {
+.wall {
+	height:600px;
+	width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:gainsboro;
 	position:relative;
 }
 
 .wrapper {
 	width:100%;
 	height:1000px;
-	background-color: white;
+	
 	
 
 }
@@ -31,8 +36,33 @@ body {
 
 .linklisting {
 	height:200px;
-	width:40%;
+	width:500px;
 	position:absolute;
 	top:200px;
-	left:30%;
+	left:400px;
 }
+
+.firstNav {
+	width:75px;
+	height:75px;
+	position:absolute;
+	top:100px;
+	left:120px;
+}
+
+.previousNav {
+	width:75px;
+	height:75px;
+	position:absolute;
+	top:350px;
+	left:200px;
+}
+
+.nextNav{
+	width:75px;
+	height:75px;
+	position:absolute;
+	top: 150px;
+	left: 1000px;
+}
+
